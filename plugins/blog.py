@@ -48,6 +48,7 @@ def preBuild(site):
 			# Build a context for each post
 			postContext = {}
 			postContext['title'] = find('title')
+                        postContext['subtitle'] = find('subtitle')
 			postContext['author'] = find('author')
 			postContext['date'] = find('date')
 			postContext['path'] = page.path
